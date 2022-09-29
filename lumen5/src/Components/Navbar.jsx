@@ -1,28 +1,54 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import styles from "./Navbar.module.css"
+import { Box, Button, Image, Menu, MenuButton, MenuItem, MenuList } from "@chakra-ui/react"
+import { ChevronDownIcon } from "@chakra-ui/icons"
 
 
 
-const links = [
-    {to:"/pricing", title:"Pricing"},
-    {to:"/enterprices", title:"Enterprices"},
-    {to:"/casestudies", title:"Case Studies"},
-    {to:"/learn", title:"Learn"}
-]
+// const links = [
+//     {to:"/", title:""},
+//     {to:"/pricing", title:"Pricing"},
+//     {to:"/enterprices", title:"Enterprices"},
+//     {to:"/casestudies", title:"Case Studies"},
+//     {to:"/learn", title:"Learn"}
+// ]
 
 const Navbar = () => {
   return (
-    <div
+    <Box
     style={{
         display: "flex",
         alignItems: "center",
-        justifyContent: "space-around",
-        width: "80%",
+        justifyContent: "space-between",
+        width: "85%",
         margin: "auto",
     }} 
     >
-      {links.map((item) => (
+      <Box>
+       <NavLink to="/"><Image height="90px" width="150px" src='https://storage.googleapis.com/lumen5-site-images/L5-logo/L5-logo-header.png'/></NavLink>
+      </Box>
+      <Box
+      style={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "space-evenly",
+        width: "40%",
+    }} 
+      >
+        <NavLink to="/pricing">Pricing</NavLink>
+        <NavLink to="/enterprices">Enterprices</NavLink>
+        <NavLink to="/casestudies">Case Studies</NavLink> 
+        <Menu>
+          <MenuButton>Learn <ChevronDownIcon />
+          </MenuButton>
+          <MenuList>
+            <MenuItem>Resources</MenuItem>
+            <MenuItem>Blog</MenuItem>
+          </MenuList>
+        </Menu>
+
+      {/* {links.map((item) => (
         <NavLink 
         className = {({isActive}) => {
             return isActive ? styles.active : styles.default;
@@ -32,8 +58,11 @@ const Navbar = () => {
         >
             {item.title}
         </NavLink>
-      ))}
-    </div>
+      ))} */}
+       <NavLink to="/login"><Button colorScheme='blue' variant='outline' borderRadius="100px" height="55px">Login</Button></NavLink>
+       <NavLink to="/signup"><Button colorScheme='blue' borderRadius="100px" height="55px">Sign up</Button></NavLink>
+      </Box>
+    </Box>
   )
 }
 

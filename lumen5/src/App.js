@@ -3,6 +3,7 @@ import './App.css';
 import AllRoutes from './Components/AllRoutes';
 import Navbar from './Components/Navbar';
 import Footer from './Pages/Footer';
+import TableData from './Pages/TableData';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Navbar/>
       <AllRoutes/>
       <Footer/>
+      <TableData/>
     </div>
   );
 }

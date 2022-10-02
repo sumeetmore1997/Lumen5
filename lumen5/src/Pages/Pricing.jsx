@@ -9,7 +9,7 @@ const Pricing = () => {
     <Box>
 
       <Box w="70%" m="auto">
-        <p style={{ "fontSize": "20px", "fontWeight": "400", "textAlign": "center", "marginLeft": "200px", "marginRight": "200px", "marginTop": "40px", "font-family": "Poppins,sans-serif" }}>
+        <p style={{ "fontSize": "20px",   "fontWeight": "400", "textAlign": "center", "marginLeft": "200px", "marginRight": "200px", "marginTop": "40px", "font-family": "Poppins,sans-serif" }}>
           PRICING</p>
         <p style={{ "fontSize": "35px", "fontWeight": "700", "textAlign": "center", "marginLeft": "200px", "marginRight": "200px", "font-family": "Poppins,sans-serif" }}>
           Plans for your video content creation strategy</p>

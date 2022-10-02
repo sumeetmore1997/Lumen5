@@ -1,4 +1,4 @@
-import { Box, Button, Divider, Image, Link } from '@chakra-ui/react'
+import { AspectRatio, Box, Button, Divider, Grid, GridItem, Image, Link } from '@chakra-ui/react'
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
@@ -117,6 +117,44 @@ const Enterprices = () => {
             </Box>
         </Box>
 
+        <Box m="auto" w="70%" >
+            <p style={{"margin":"auto","fontSize":"40px","font-family": "Poppins,sans-serif","marginTop":"50px"}}>Bespoke custom templates</p>
+            <p style={{"margin":"auto","fontSize":"25px","font-family": "Poppins,sans-serif","marginTop":"5px", "marginBottom":"50px"}}>We work with your brand team every step of the way</p>
+            <Grid templateColumns='repeat(2, 1fr)' gap={6}>
+        <GridItem><AspectRatio mt="30px" m="auto" maxW='400px' ratio={16/9}>
+            <iframe
+                title='simens'
+                src='https://storage.googleapis.com/lumen5-site-images/siemens_prev.mp4'
+                allowFullScreen
+            />
+        </AspectRatio>
+        </GridItem>
+        <GridItem><AspectRatio mt="30px" m="auto" maxW='400px' ratio={16/9}>
+            <iframe
+                title='saleforce'
+                src='https://storage.googleapis.com/lumen5-site-images/salesforce_prev.mp4'
+                allowFullScreen
+            />
+        </AspectRatio>
+        </GridItem>
+        <GridItem><AspectRatio m="auto" mt="30px" maxW='400px' ratio={16/9}>
+            <iframe
+                title='simens'
+                src='https://storage.googleapis.com/lumen5-site-images/viasat_prev.mp4'
+                allowFullScreen
+            />
+        </AspectRatio></GridItem>
+        <GridItem><AspectRatio m="auto" mt="30px" maxW='400px' ratio={16/9}>
+            <iframe
+                title='saleforce'
+                src='https://storage.googleapis.com/lumen5-site-images/storaenso_prev.mp4'
+                allowFullScreen
+            />
+        </AspectRatio></GridItem>
+        </Grid>
+        </Box>
+
+
         <Box w="70%" margin="auto" mt="100px">
             <p style={{"fontSize":"35px", "fontWeight":"700", "textAlign":"center", "font-family": "Poppins,sans-serif","width":"550px", "margin":"auto", "lineHeight":"45px"}}>Tips and tricks for effortless video production</p>
             <p style={{"fontSize":"22px", "fontWeight":"300", "textAlign":"center", "font-family": "Poppins,sans-serif","width":"450px", "margin":"auto", "marginTop":"20px"}}>Learn how our customers save time and boost engagement with Lumen5</p>
@@ -139,7 +177,7 @@ const Enterprices = () => {
             </Box>
         </Box>
 
-        <Box w="70%" margin="auto" mt="100px" border="1px solid" p="25px" alignItems="center" borderRadius="20px" color="white" bgColor="#5846f6">
+        <Box mb="50px" w="70%" margin="auto" mt="100px" border="1px solid" p="25px" alignItems="center" borderRadius="20px" color="white" bgColor="#5846f6">
             <div>
             <p style={{"fontSize":"35px", "fontWeight":"700", "textAlign":"center", "marginLeft":"200px","marginRight":"200px", "font-family": "Poppins,sans-serif"}}>
             Join over 1,000,000 companies using Lumen5 to tell their stories.
@@ -152,6 +190,7 @@ const Enterprices = () => {
             <NavLink to="/signup"><Button color='blue' borderRadius="100px" height="55px" bgColor="white">Sign up free</Button></NavLink>
         </Box>
 
+        
     </Box>
   )
 }

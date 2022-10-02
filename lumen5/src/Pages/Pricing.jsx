@@ -1,6 +1,8 @@
 import { Box, Button, Image, Text, Icon } from '@chakra-ui/react'
 import { CheckIcon } from '@chakra-ui/icons'
 import React from 'react'
+import TableData from './TableData'
+import { NavLink } from 'react-router-dom'
 
 const Pricing = () => {
   return (
@@ -89,12 +91,27 @@ const Pricing = () => {
         </Box>
       </Box>
 
-      <Box>
+      <Box mb="100px">
         <p style={{ "marginTop": "50px", "fontSize": "20px", "textAlign": "center", "font-family": "Poppins,sans-serif","marginBottom":"100px" }}>Over 10 million videos created across every industry</p>
         <Button colorScheme='blue' borderRadius="100px" height="55px" w="150px" mr="20px" variant='outline'>Get started</Button>
         <span style={{"fontWeight":"bold","fontSize":"20px","marginRight":"25px"}}>or</span>
         <span><Button colorScheme='blue' borderRadius="100px" height="55px" w="150px" mr="20px">Get started</Button></span>
       </Box>
+
+      <TableData/>
+
+      <Box w="70%" margin="auto" mt="100px" border="1px solid" p="25px" alignItems="center" borderRadius="20px" color="white" bgColor="#5846f6">
+            <div>
+            <p style={{"fontSize":"35px", "fontWeight":"700", "textAlign":"center", "marginLeft":"200px","marginRight":"200px", "font-family": "Poppins,sans-serif"}}>
+            Join over 1,000,000 companies using Lumen5 to tell their stories.
+            </p>
+            <p style={{"fontSize":"22px", "fontWeight":"400", "lineHeight":"30px", "textAlign":"center", "marginLeft":"200px","marginRight":"200px", "marginTop":"40px", "font-family": "Poppins,sans-serif"}}>
+            Lumen5 is a video creation software that helps marketers, publishers, and brands create video content in a breeze, without any technical expertise.
+            </p>
+            </div>
+            <br/>
+            <NavLink to="/signup"><Button color='blue' borderRadius="100px" height="55px" bgColor="white">Sign up free</Button></NavLink>
+        </Box>
 
     </Box>
   )

@@ -1,5 +1,5 @@
 
-import { Box, Button, Divider, Image, Text, Link } from '@chakra-ui/react'
+import { Box, Button, Divider, Image, Text, Link, Grid, GridItem, AspectRatio } from '@chakra-ui/react'
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
@@ -115,6 +115,161 @@ const Home = () => {
             </Box>
         </Box>
 
+        <Box w="70%" m="auto" mt="100px">
+        <p style={{"margin":"auto","fontSize":"40px","font-family": "Poppins,sans-serif","marginTop":"50px"}}>Captivating video templates</p>
+            <p style={{"margin":"auto","fontSize":"25px","font-family": "Poppins,sans-serif","marginTop":"5px", "marginBottom":"50px"}}>Drag and drop. No experience required.</p>
+            <Grid templateColumns='repeat(3, 1fr)' gap={6}>
+                <GridItem>
+                    <AspectRatio mt="30px" m="auto" maxW='400px' ratio={16/9}>
+                        <iframe
+                            title='simens'
+                            src='https://storage.googleapis.com/lumen5-site-images/prev_tracer.mp4'
+                            allowFullScreen
+                        />
+                    </AspectRatio>
+                </GridItem>
+                <GridItem>
+                <AspectRatio mt="30px" m="auto" maxW='400px' ratio={16/9}>
+                        <iframe
+                            title='simens'
+                            src='https://storage.googleapis.com/lumen5-site-images/prev_billow.mp4'
+                            allowFullScreen
+                        />
+                    </AspectRatio>
+                </GridItem>
+                <GridItem>
+                <AspectRatio mt="30px" m="auto" maxW='400px' ratio={16/9}>
+                        <iframe
+                            title='simens'
+                            src='https://storage.googleapis.com/lumen5-site-images/prev_vertex.mp4'
+                            allowFullScreen
+                        />
+                    </AspectRatio>
+                </GridItem>
+                <GridItem>
+                <AspectRatio mt="30px" m="auto" maxW='400px' ratio={16/9}>
+                        <iframe
+                            title='simens'
+                            src='https://storage.googleapis.com/lumen5-site-images/prev_circuit.mp4'
+                            allowFullScreen
+                        />
+                    </AspectRatio>
+                </GridItem>
+                <GridItem>
+                <AspectRatio mt="30px" m="auto" maxW='400px' ratio={16/9}>
+                        <iframe
+                            title='simens'
+                            src='https://storage.googleapis.com/lumen5-site-images/prev_vault.mp4'
+                            allowFullScreen
+                        />
+                    </AspectRatio>
+                </GridItem>
+                <GridItem>
+                <AspectRatio mt="30px" m="auto" maxW='400px' ratio={16/9}>
+                        <iframe
+                            title='simens'
+                            src='https://storage.googleapis.com/lumen5-site-images/prev_notice.mp4'
+                            allowFullScreen
+                        />
+                    </AspectRatio>
+                </GridItem>
+                <GridItem>
+                <AspectRatio mt="30px" m="auto" maxW='400px' ratio={16/9}>
+                        <iframe
+                            title='simens'
+                            src='https://storage.googleapis.com/lumen5-site-images/flux_prev.mp4'
+                            allowFullScreen
+                        />
+                    </AspectRatio>
+                </GridItem>
+                <GridItem>
+                <AspectRatio mt="30px" m="auto" maxW='400px' ratio={16/9}>
+                        <iframe
+                            title='simens'
+                            src='https://storage.googleapis.com/lumen5-site-images/unity_prev.mp4'
+                            allowFullScreen
+                        />
+                    </AspectRatio>
+                </GridItem>
+                <GridItem>
+                <AspectRatio mt="30px" m="auto" maxW='400px' ratio={16/9}>
+                        <iframe
+                            title='simens'
+                            src='https://storage.googleapis.com/lumen5-site-images/looper_prev.mp4'
+                            allowFullScreen
+                        />
+                    </AspectRatio>
+                </GridItem>
+            </Grid>
+        </Box>
+
+        <Box w="70%" m="auto" mt="100px">
+          <p style={{"margin":"auto","fontSize":"40px","font-family": "Poppins,sans-serif","marginTop":"50px"}}>Explore videos made with Lumen5</p>
+          <Box display="flex" justifyContent="space-between" mb="50px" mt="20px">
+          <Button textAlign="center" colorScheme='blue' borderRadius="100px"  height="40px" w="150px" mt="15px" variant='outline'>Conect Marketing</Button>
+          <Button textAlign="center" colorScheme='blue' borderRadius="100px"  height="40px" w="150px" mt="15px" variant='outline'>Communications</Button>
+          <Button textAlign="center" colorScheme='blue' borderRadius="100px"  height="40px" w="150px" mt="15px" variant='outline'>Promotional</Button>
+          <Button textAlign="center" colorScheme='blue' borderRadius="100px"  height="40px" w="150px" mt="15px" variant='outline'>People & Culture</Button>
+          <Button textAlign="center" colorScheme='blue' borderRadius="100px"  height="40px" w="150px" mt="15px" variant='outline'>Localization</Button>
+          </Box>
+            <Grid templateColumns='repeat(3, 1fr)' gap={6}>
+                <GridItem>
+                    <AspectRatio mt="30px" m="auto" maxW='400px' ratio={16/9}>
+                        <iframe
+                            title='simens'
+                            src='https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/Hydrogen%20Economy.mp4'
+                            allowFullScreen
+                        />
+                    </AspectRatio>
+                </GridItem>
+                <GridItem>
+                <AspectRatio mt="30px" m="auto" maxW='400px' ratio={16/9}>
+                        <iframe
+                            title='simens'
+                            src='https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/siemens-content.mp4'
+                            allowFullScreen
+                        />
+                    </AspectRatio>
+                </GridItem>
+                <GridItem>
+                <AspectRatio mt="30px" m="auto" maxW='400px' ratio={16/9}>
+                        <iframe
+                            title='simens'
+                            src='https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/Responsible%20Investment.mp4'
+                            allowFullScreen
+                        />
+                    </AspectRatio>
+                </GridItem>
+                <GridItem>
+                <AspectRatio mt="30px" m="auto" maxW='400px' ratio={16/9}>
+                        <iframe
+                            title='simens'
+                            src='https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/Workplace%20Evolution.mp4'
+                            allowFullScreen
+                        />
+                    </AspectRatio>
+                </GridItem>
+                <GridItem>
+                <AspectRatio mt="30px" m="auto" maxW='400px' ratio={16/9}>
+                        <iframe
+                            title='simens'
+                            src='https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/The%20Pandemic.mp4'
+                            allowFullScreen
+                        />
+                    </AspectRatio>
+                </GridItem>
+                <GridItem>
+                <AspectRatio mt="30px" m="auto" maxW='400px' ratio={16/9}>
+                        <iframe
+                            title='simens'
+                            src='https://storage.googleapis.com/lumen5-site-images/homepage/Content%20Marketing/Supply%20Chain%20Resilience.mp4'
+                            allowFullScreen
+                        />
+                    </AspectRatio>
+                </GridItem>
+            </Grid>
+        </Box>
+
         <Box w="70%" margin="auto" mt="100px">
             <p style={{"fontSize":"35px", "fontWeight":"700", "textAlign":"center", "font-family": "Poppins,sans-serif"}}>Learning resources for video marketing</p>
             <Box w="70%" display="flex" m="auto" mt="30px" justifyContent="space-between">
@@ -148,6 +303,7 @@ const Home = () => {
             <br/>
             <NavLink to="/signup"><Button color='blue' borderRadius="100px" height="55px" bgColor="white">Sign up free</Button></NavLink>
         </Box>
+
 
     </Box>
   )

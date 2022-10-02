@@ -3,16 +3,7 @@ import { Link, NavLink } from 'react-router-dom'
 import styles from "./Navbar.module.css"
 import { Box, Button, Image, Menu, MenuButton, MenuItem, MenuList } from "@chakra-ui/react"
 import { ChevronDownIcon } from "@chakra-ui/icons"
-
-
-
-// const links = [
-//     {to:"/", title:""},
-//     {to:"/pricing", title:"Pricing"},
-//     {to:"/enterprices", title:"Enterprices"},
-//     {to:"/casestudies", title:"Case Studies"},
-//     {to:"/learn", title:"Learn"}
-// ]
+ 
 
 const Navbar = () => {
   return (
@@ -23,6 +14,11 @@ const Navbar = () => {
         justifyContent: "space-between",
         width: "85%",
         margin: "auto",
+        position:"sticky",
+        top:"0",
+        overflow:"hidden",
+        backgroundColor:"white"
+       
     }} 
     >
       <Box>
@@ -48,17 +44,7 @@ const Navbar = () => {
           </MenuList>
         </Menu>
 
-      {/* {links.map((item) => (
-        <NavLink 
-        className = {({isActive}) => {
-            return isActive ? styles.active : styles.default;
-        }}
-        key={item.to}
-        to={item.to}
-        >
-            {item.title}
-        </NavLink>
-      ))} */}
+    
        <NavLink to="/login"><Button colorScheme='blue' variant='outline' borderRadius="100px" height="55px">Login</Button></NavLink>
        <NavLink to="/signup"><Button colorScheme='blue' borderRadius="100px" height="55px">Sign up</Button></NavLink>
       </Box>
